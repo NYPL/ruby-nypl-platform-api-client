@@ -50,6 +50,17 @@ This repo uses a single, versioned `master` branch.
  * Create PR against `master`
  * After merging the PR, git tag `master` with new version number.
 
+### Updating gem
+
+After merging to `master`, push the updated gem to rubygems.org:
+
+```
+gem build nypl_platform_api_client.gemspec
+gem push nypl_platform_api_client-[version].gem
+```
+
+See [this guide](https://guides.rubygems.org/make-your-own-gem/) for additional help.
+
 ## Testing
 
 ```

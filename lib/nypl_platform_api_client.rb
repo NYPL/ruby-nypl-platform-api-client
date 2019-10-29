@@ -105,6 +105,7 @@ class NyplPlatformApiClient
       end
     elsif response.code == "401"
       # Likely an expired access-token; Wipe it for next run
+      # TODO: Implement token refresh
       @access_token = nil
       raise NyplPlatformApiClientTokenError.new("Got a 401: #{response.body}")
     else

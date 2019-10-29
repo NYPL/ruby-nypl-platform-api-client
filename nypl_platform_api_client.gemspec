@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Client for querying NYPL's internal Platform API"
   s.authors     = ["nonword"]
   s.email       = 'paulbeaudoin@nypl.org'
-  s.files       = ["lib/platform_api_client.rb", "lib/errors.rb"]
-  s.homepage    = 'https://github.com/NYPL/ruby_nypl_platform_nypl_client'
+  s.files       = ["lib/nypl_platform_api_client.rb", "lib/errors.rb"]
+  s.homepage    = 'https://github.com/NYPL/ruby-nypl-platform-api-client'
   s.license     = 'MIT'
 end
